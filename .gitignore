@@ -1,1 +1,9 @@
-./swiftpm
+# SPM defaults
+.DS_Store
+/.build
+/Packages
+.swiftpm/
+xcuserdata/
+DerivedData/
+
+**/*.xcuserstate

@@ -3,18 +3,20 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/v/release/KeyboardKit/KeyboardKitPro?color=forestgreen&sort=semver" alt="Version" />
-    <a href="https://keyboardkit.github.io/KeyboardKitPro"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
-    <img src="https://img.shields.io/badge/swift-5.9-orange.svg" alt="Swift 5.9" />
-    <img src="https://img.shields.io/badge/license-commercial-yellow.svg" alt="Documentation" />
+    <img src="https://img.shields.io/github/v/release/Kankoda/VietnameseInput?color=forestgreen&sort=semver" alt="Version" />
+    <img src="https://img.shields.io/badge/swift-6.0-orange.svg" alt="Swift 6.0" />
+    <a href="https://keyboardkit.github.io/VietnameseInput"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
+    <img src="https://img.shields.io/badge/license-commercial-yellow.svg" alt="Commercially Licensed" />
 </p>
 
 
 # Vietnamese Input
 
-VietnameseInput is a Swift SDK that lets you add Vietnamese typing in TELEX, VNI, and VIQR to your apps.
+VietnameseInput is a Swift SDK that lets you add Vietnamese input support for Vietnamese TELEX, VNI, and VIQR to your apps.
 
-VietnameseInput is currently in internal beta, but you can [reach out][Email] if you want to become a beta tester.
+With VietnameseInput, your app users don't have to switch to a Vietnamese keyboard to type in Vietnamese. This is useful in educational apps, games, as well as in custom iOS keyboard extensions.
+
+VietnameseInput is currently in closed, internal beta, but you can [reach out][Email] if you want to become a beta tester.
 
 <!--VietnameseInput requires a license to be used. You can sign up on the [KeyboardKit website][Website] or the [Gumroad store][Gumroad].-->
 
@@ -69,7 +71,7 @@ Feel free to reach out if you have any questions or feedback, or if you need sup
 
 ## Commercial License
 
-This package requires a license to be used. You can sign up on the [package website][Website] or the [Gumroad store][Gumroad].
+This package requires a license to be used. You can sign up on the [product website][Website] or the [Gumroad store][Gumroad].
 
 
 
