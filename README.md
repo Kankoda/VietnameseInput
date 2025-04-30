@@ -12,7 +12,7 @@
 
 # Vietnamese Input
 
-VietnameseInput is a Swift SDK that lets you add Vietnamese input support for Vietnamese TELEX, VNI, and VIQR to your apps.
+VietnameseInput is a Swift SDK that lets you add Vietnamese TELEX, VNI, and VIQR input support to your apps.
 
 With VietnameseInput, your app users don't have to switch to a Vietnamese keyboard to type in Vietnamese. This is useful in educational apps, games, as well as in custom iOS keyboard extensions.
 
@@ -34,31 +34,61 @@ VietnameseInput is a closed-source package and must therefore only be linked to 
 
 
 
-## Getting started
+## Getting Started
 
-TBD.
+After signing up for a VietnameseInput license, you must setup your license to be able to use the SDK:
 
-<!--For more information, see the [getting started guide][Getting-Started] and [essentials][Essentials] articles.-->
+```swift
+try await VietnameseInputLicense.setupWithLicenseKey("abc-123")   // or:
+try await VietnameseInputLicense.setupWithLicenseFile()
+```
+
+If this is successful, you can now create a ``VietnameseInputEngine``, which can be used to type in Vietnamese:
+
+```swift
+let engine = try VietnameseInputEngine()  // Fails if no license is registered
+
+// TELEX
+engine.appendCharacters(in: "uow", to: "", with: .telex)     // -> "ươ"
+engine.appendCharacters(in: "ow", to: "u", with: .telex)     // -> "ươ"
+engine.appendCharacters(in: "Thuowng", to: "", with: .telex) // -> "Thương"
+engine.appendCharacters(in: "Duowng", to: "", with: .telex)  // -> "Dương"
+
+// VIQR
+engine.appendCharacters(in: "uo*", to: "", with: .viqr)      // -> "ươ"
+engine.appendCharacters(in: "o*", to: "u", with: .viqr)      // -> "ươ"
+engine.appendCharacters(in: "Thuo*ng", to: "", with: .viqr)  // -> "Thương"
+engine.appendCharacters(in: "Duo*ng", to: "", with: .viqr)   // -> "Dương"
+
+// VNI
+engine.appendCharacters(in: "uo7", to: "", with: .vni)        // -> "ươ"
+engine.appendCharacters(in: "o7", to: "u", with: .vni)        // -> "ươ"
+engine.appendCharacters(in: "Thuo7ng", to: "", with: .vni)    // -> "Thương"
+engine.appendCharacters(in: "Duo7ng", to: "", with: .vni)     // -> "Dương"
+```
+
+This engine can also calculate which diacritic to apply instead of a character, which insertion strategy to use, etc.
+
+See the [getting-started guide][Getting-Started] for more information.
+
 
 
 
 ## Documentation
 
-TBD.
-
-<!--The [online documentation][Documentation] has a thorough getting-started guide, a detailed article for each feature, code samples, etc. You can also build it from the source code to get better formatting.-->
+The [online documentation][Documentation] has a thorough getting-started guide, detailed articles, code samples, etc.
 
 
 
 ## Demo App
 
-TBD.
+A demo app will be available once this package is ready for use.
 
 
 
 ## Contact
 
-VietnameseInput is developed by Swedish company Kankoda.
+VietnameseInput is developed by [Kankoda][Kankoda] - a software company in Stockholm, Sweden.
 
 * Website: [kankoda.com/VietnameseInput][Website]
 * E-mail: [info@kankoda.com][Email]
@@ -75,7 +105,8 @@ This package requires a license to be used. You can sign up on the [product webs
 
 
 
-[Email]: mailto:info@keyboardkit.com
+[Email]: mailto:info@kankoda.com
+[Kankoda]: https://kankoda.com
 [Website]: https://kankoda.com/vietnameseinput
 [Bluesky]: https://bsky.app/profile/kankoda.bsky.social
 [Mastodon]: https://techhub.social/@kankoda

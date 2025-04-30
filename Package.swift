@@ -26,9 +26,8 @@ let package = Package(
         .binaryTarget(
             name: "VietnameseInput",
 //            path: "../src/.build/VietnameseInput_new.zip"
-            url:
-                "https://github.com/Kankoda/VietnameseInput/releases/download/0.0.2_binary/VietnameseInput_new.zip",
-            checksum: "b129ddcd410653b7238e489e8e47c21ec363481ab3c56150fda8b2c5b043137c"
+            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.0.3_binary/VietnameseInput.zip",
+            checksum: "d0aed4d31fee07c8227e20446deb093892e72ee632875c6f8dd803d9f613c50e"
         )
     ]
 )
