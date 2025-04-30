@@ -12,9 +12,11 @@
 
 # Vietnamese Input
 
-VietnameseInput is a Swift SDK that lets you add Vietnamese typing in TELEX, VNI, and VIQR to your apps.
+VietnameseInput is a Swift SDK that lets you add Vietnamese input support for Vietnamese TELEX, VNI, and VIQR to your apps.
 
-VietnameseInput is currently in internal beta, but you can [reach out][Email] if you want to become a beta tester.
+With VietnameseInput, your app users don't have to switch to a Vietnamese keyboard to type in Vietnamese. This is useful in educational apps, games, as well as in custom iOS keyboard extensions.
+
+VietnameseInput is currently in closed, internal beta, but you can [reach out][Email] if you want to become a beta tester.
 
 <!--VietnameseInput requires a license to be used. You can sign up on the [KeyboardKit website][Website] or the [Gumroad store][Gumroad].-->
 
