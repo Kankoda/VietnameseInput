@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/v/release/KeyboardKit/KeyboardKitPro?color=forestgreen&sort=semver" alt="Version" />
-    <a href="https://keyboardkit.github.io/KeyboardKitPro"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
-    <img src="https://img.shields.io/badge/swift-5.9-orange.svg" alt="Swift 5.9" />
-    <img src="https://img.shields.io/badge/license-commercial-yellow.svg" alt="Documentation" />
+    <img src="https://img.shields.io/github/v/release/Kankoda/VietnameseInput?color=forestgreen&sort=semver" alt="Version" />
+    <img src="https://img.shields.io/badge/swift-6.0-orange.svg" alt="Swift 6.0" />
+    <a href="https://keyboardkit.github.io/VietnameseInput"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
+    <img src="https://img.shields.io/badge/license-commercial-yellow.svg" alt="Commercially Licensed" />
 </p>
 
 
@@ -69,7 +69,7 @@ Feel free to reach out if you have any questions or feedback, or if you need sup
 
 ## Commercial License
 
-This package requires a license to be used. You can sign up on the [package website][Website] or the [Gumroad store][Gumroad].
+This package requires a license to be used. You can sign up on the [product website][Website] or the [Gumroad store][Gumroad].
 
 
 
