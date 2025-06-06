@@ -22,7 +22,7 @@ VietnameseInput lets you type in TELEX, VNI, and VIQR, without having to switch 
 
 This package requires a commercial license to be used. You can sign up for a license from the [product website][Website] or the [Gumroad store][Gumroad].
 
-You can also use the "FREE" license key when setting up the library, as described in [getting-started guide][Getting-Started]. This gives you access to a capped version of the library, that can make at most 50 requests before it stops working.
+You can also use the "FREE" license key, as described in [getting-started guide][Getting-Started]. This gives you access to a capped version of the library, that can make at most 50 requests before it stops working.
 
 
 
@@ -34,44 +34,45 @@ VietnameseInput can be installed with the Swift Package Manager:
 https://github.com/Kankoda/VietnameseInput.git
 ```
 
-This is a binary package, and must therefore only be linked to the main app target. All oher targets can still import & use it.
-
 
 
 ## Getting Started
 
-After [signing up for a VietnameseInput license](#pricing), you must setup your license to be able to use the SDK:
+After [signing up for a VietnameseInput license](#pricing), you must use your license to unlock the SDK:
 
 ```swift
-try await VietnameseInputLicense.setupWithLicenseKey("abc-123")   // or:
-try await VietnameseInputLicense.setupWithLicenseFile()
+let license = try await VietnameseInput.setupLicense(
+    licenseKey: "abc-123",  // If you have a VietnameseInput license key
+    productBundle: .module  // If you have a VietnameseInput license file
+)
 ```
 
-If this is successful, you can now create a ``VietnameseInputEngine``, which can be used to type in Vietnamese:
+If this is successful, you can now create a ``VietnameseInputEngine``, which can be used for Vietnamese input:
 
 ```swift
 let engine = try VietnameseInputEngine()  // Fails if no license is registered
-
-// TELEX
-engine.appendCharacters(in: "uow", to: "", with: .telex)     // -> "ươ"
-engine.appendCharacters(in: "ow", to: "u", with: .telex)     // -> "ươ"
-engine.appendCharacters(in: "Thuowng", to: "", with: .telex) // -> "Thương"
-engine.appendCharacters(in: "Duowng", to: "", with: .telex)  // -> "Dương"
-
-// VIQR
-engine.appendCharacters(in: "uo*", to: "", with: .viqr)      // -> "ươ"
-engine.appendCharacters(in: "o*", to: "u", with: .viqr)      // -> "ươ"
-engine.appendCharacters(in: "Thuo*ng", to: "", with: .viqr)  // -> "Thương"
-engine.appendCharacters(in: "Duo*ng", to: "", with: .viqr)   // -> "Dương"
-
-// VNI
-engine.appendCharacters(in: "uo7", to: "", with: .vni)        // -> "ươ"
-engine.appendCharacters(in: "o7", to: "u", with: .vni)        // -> "ươ"
-engine.appendCharacters(in: "Thuo7ng", to: "", with: .vni)    // -> "Thương"
-engine.appendCharacters(in: "Duo7ng", to: "", with: .vni)     // -> "Dương"
 ```
 
-This engine can also calculate which diacritic to apply instead of a character, which insertion strategy to use, etc.
+The engine supports TELEX, VIQ & VNI. You can see [this page](https://vntyping.com) for more info on how these input methods work.
+
+```swift
+// TELEX
+engine.input("uow", into: "", with: .telex)     // -> "ươ"
+engine.input("ow", into: "u", with: .telex)     // -> "ươ"
+engine.input("Duowng", into: "", with: .telex)  // -> "Dương"
+
+// VIQR
+engine.input("uo*",in to: "", with: .viqr)      // -> "ươ"
+engine.input("o*",in to: "u", with: .viqr)      // -> "ươ"
+engine.input("Duo*ng"in, to: "", with: .viqr)   // -> "Dương"
+
+// VNI
+engine.input("uo7", into: "", with: .vni)       // -> "ươ"
+engine.input("o7", into: "u", with: .vni)       // -> "ươ"
+engine.input("Duo7ng", into: "", with: .vni)    // -> "Dương"
+```
+
+You can also use the input engine to check if an input character should be replaced with a diacritic, and if so how.
 
 See the [getting-started guide][Getting-Started] for more information.
 
@@ -92,9 +93,9 @@ A demo app will be available once this package is ready for use.
 
 ## Contact
 
-VietnameseInput is developed by [Kankoda][Kankoda] - a software company in Stockholm, Sweden.
+VietnameseInput is developed by [Kankoda][Website] in Stockholm, Sweden.
 
-* Website: [kankoda.com/VietnameseInput][Website]
+* Website: [kankoda.com][Website]
 * E-mail: [info@kankoda.com][Email]
 * Bluesky: [@kankoda.bsky.social][Bluesky]
 * Mastodon: [@kankoda@techhub.social][Mastodon]
@@ -110,8 +111,7 @@ This package requires a license to be used. You can sign up on the [product webs
 
 
 [Email]: mailto:info@kankoda.com
-[Kankoda]: https://kankoda.com
-[Website]: https://kankoda.com/vietnameseinput
+[Website]: https://kankoda.com
 [Bluesky]: https://bsky.app/profile/kankoda.bsky.social
 [Mastodon]: https://techhub.social/@kankoda
 [Sponsors]: https://github.com/sponsors/danielsaidi
