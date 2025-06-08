@@ -1,0 +1,33 @@
+{
+  "originHash" : "b426da478b051fd7f0ca2c2d3de7a13779e736588b7dc974f44400ed40d01e26",
+  "pins" : [
+    {
+      "identity" : "licensekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/LicenseKit/LicenseKit.git",
+      "state" : {
+        "revision" : "a3ce0d163c898ce7ed2310c6cee44c1634db49c2",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "standardbuttons",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsaidi/standardbuttons",
+      "state" : {
+        "revision" : "cf8030f55d3db5421c52ed50fd2cdef03ee7b1bd",
+        "version" : "0.6.0"
+      }
+    },
+    {
+      "identity" : "vietnameseinput",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Kankoda/VietnameseInput.git",
+      "state" : {
+        "revision" : "5039aa40ce2ab1e389131967dbebae31376bec03",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
