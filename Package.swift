@@ -18,13 +18,13 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.0"))
+        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1"))
     ],
     targets: [
         .binaryTarget(
             name: "VietnameseInput",
-            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.0.6_binary/VietnameseInput.zip",
-            checksum: "ba6458146beb9d532ed8a2be5f076cc377080a48783493c3b02acd8dfee554de"
+            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.0_binary/VietnameseInput_Universal.zip",
+            checksum: "be685b134693ca97e7e5817c39fe8794e716cbd62017fe0519415407c1e9f7af"
         ),
         .target(
             name: "VietnameseInputDependencies",
