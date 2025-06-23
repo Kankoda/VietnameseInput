@@ -356,7 +356,7 @@
 			repositoryURL = "https://github.com/Kankoda/VietnameseInput.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.6;
+				minimumVersion = 0.2.0;
 			};
 		};
 		A9B198CC2DF59EE600D5CD6B /* XCRemoteSwiftPackageReference "standardbuttons" */ = {
