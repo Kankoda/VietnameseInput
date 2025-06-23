@@ -24,8 +24,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "VietnameseInput",
-            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.1_binary/VietnameseInput.zip",
-            checksum: "f6c65e87af500193bc6a51534e4c8f7dff5505133d9c6e67553118b3c8c280ad"
+            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.5_binary/VietnameseInput.zip",
+            checksum: "bf34f61cd916be117e124747aa7aa2fe4171f7540ccdaa0d83f7c794cbde60fa"
         ),
         .target(
             name: "VietnameseInputDependencies",

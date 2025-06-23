@@ -9,4 +9,4 @@ import Foundation
 
 /// This class is only used to make the public package fetch
 /// dependencies for the binary target.
-public class VietnameseInputDependencies {}
+public class VietnameseInputDependencies {}
