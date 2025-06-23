@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kankoda/VietnameseInput.git",
       "state" : {
-        "revision" : "4f76587462afcf098b68f175c5b81816a5ceccd5",
-        "version" : "0.1.2"
+        "revision" : "44f9f42624e86a905f13c6b50d2cc798dc62943a",
+        "version" : "0.1.5"
       }
     }
   ],

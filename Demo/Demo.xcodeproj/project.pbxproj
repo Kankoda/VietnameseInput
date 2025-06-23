@@ -355,16 +355,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Kankoda/VietnameseInput.git";
 			requirement = {
-				kind = exactVersion;
-				version = 0.1.2;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
 			};
 		};
 		A9B198CC2DF59EE600D5CD6B /* XCRemoteSwiftPackageReference "standardbuttons" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielsaidi/standardbuttons";
 			requirement = {
-				kind = exactVersion;
-				version = 0.6.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

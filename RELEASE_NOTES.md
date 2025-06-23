@@ -5,7 +5,7 @@ VietnameseInput will honor semantic versioning after 1.0.
 Before 1.0, breaking changes can occur in minor versions.
 
 
-## 0.1.5
+## 0.1.x
 
 This is a temporary release to verify future dependency adjustments. 
 

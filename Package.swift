@@ -19,13 +19,13 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1")),
-        .package(url: "https://github.com/danielsaidi/SwiftUIKit", .upToNextMajor(from: "5.7.0"))
+        .package(url: "https://github.com/danielsaidi/SwiftUIKit", .upToNextMajor(from: "5.8.2"))
     ],
     targets: [
         .binaryTarget(
             name: "VietnameseInput",
-            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.5_binary/VietnameseInput.zip",
-            checksum: "bf34f61cd916be117e124747aa7aa2fe4171f7540ccdaa0d83f7c794cbde60fa"
+            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.6_binary/VietnameseInput.zip",
+            checksum: "9cad9ee0524dc069cbff97d96a89a5a40ca9d4383e9f3491645db0b7c37116e1"
         ),
         .target(
             name: "VietnameseInputDependencies",
