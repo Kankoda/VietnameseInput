@@ -1,5 +1,5 @@
 {
-  "originHash" : "e95870ac3834a22f23ea3915f5ab7df0101d8e75701db143e799f1d349e778fc",
+  "originHash" : "17a050337f0e3ac0b3c3a272e87076653e00798c96e326e00f02b02123edbbd2",
   "pins" : [
     {
       "identity" : "licensekit",
@@ -8,15 +8,6 @@
       "state" : {
         "revision" : "a3ce0d163c898ce7ed2310c6cee44c1634db49c2",
         "version" : "1.4.1"
-      }
-    },
-    {
-      "identity" : "swiftuikit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/danielsaidi/SwiftUIKit",
-      "state" : {
-        "revision" : "98ba01e7870d1c7b5d53015825167223236e62b5",
-        "version" : "5.8.2"
       }
     }
   ],

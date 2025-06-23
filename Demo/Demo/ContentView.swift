@@ -25,7 +25,7 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150)
 
-                // Image.vietnameseInputLogo
+                Image.vietnameseInputLogo
 
                 TextEditor(text: $text)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)

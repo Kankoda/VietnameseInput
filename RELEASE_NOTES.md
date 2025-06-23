@@ -5,9 +5,9 @@ VietnameseInput will honor semantic versioning after 1.0.
 Before 1.0, breaking changes can occur in minor versions.
 
 
-## 0.1.x
+## 0.2
 
-This is a temporary release to verify future dependency adjustments. 
+This version adjusts the dependency management and adds a vectorized logo.
 
 
 ## 0.1

@@ -18,8 +18,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1")),
-        .package(url: "https://github.com/danielsaidi/SwiftUIKit", .upToNextMajor(from: "5.8.2"))
+        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1"))
     ],
     targets: [
         .binaryTarget(
@@ -29,7 +28,7 @@ let package = Package(
         ),
         .target(
             name: "VietnameseInputDependencies",
-            dependencies: ["LicenseKit", "SwiftUIKit"],
+            dependencies: ["LicenseKit"],
             path: "Dependencies",
         )
     ]
