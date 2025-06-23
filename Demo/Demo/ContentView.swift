@@ -25,6 +25,8 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150)
 
+                // Image.vietnameseInputLogo
+
                 TextEditor(text: $text)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .overlay(
@@ -53,6 +55,9 @@ struct ContentView: View {
             }
             .padding()
             .navigationTitle("Vietnamese Input Demo")
+            #if os(iOS)
+            .navigationBarTitleDisplayMode(.inline)
+            #endif
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Menu {

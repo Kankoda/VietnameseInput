@@ -20,12 +20,21 @@
       }
     },
     {
+      "identity" : "swiftuikit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielsaidi/SwiftUIKit",
+      "state" : {
+        "revision" : "b0cec98db0111e1e8e0ae5b14bf479402981bda9",
+        "version" : "5.7.0"
+      }
+    },
+    {
       "identity" : "vietnameseinput",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kankoda/VietnameseInput.git",
       "state" : {
-        "revision" : "5039aa40ce2ab1e389131967dbebae31376bec03",
-        "version" : "0.1.0"
+        "revision" : "4f76587462afcf098b68f175c5b81816a5ceccd5",
+        "version" : "0.1.2"
       }
     }
   ],
