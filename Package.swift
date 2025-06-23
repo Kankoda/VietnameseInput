@@ -18,17 +18,18 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1"))
+        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1")),
+        .package(url: "https://github.com/danielsaidi/SwiftUIKit", .upToNextMajor(from: "5.7.0"))
     ],
     targets: [
         .binaryTarget(
             name: "VietnameseInput",
-            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.0_binary/VietnameseInput_Universal.zip",
-            checksum: "be685b134693ca97e7e5817c39fe8794e716cbd62017fe0519415407c1e9f7af"
+            url: "https://github.com/Kankoda/VietnameseInput/releases/download/0.1.1_binary/VietnameseInput.zip",
+            checksum: "f6c65e87af500193bc6a51534e4c8f7dff5505133d9c6e67553118b3c8c280ad"
         ),
         .target(
             name: "VietnameseInputDependencies",
-            dependencies: ["LicenseKit"],
+            dependencies: ["LicenseKit", "SwiftUIKit"],
             path: "Dependencies",
         )
     ]
