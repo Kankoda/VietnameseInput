@@ -18,7 +18,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/LicenseKit/LicenseKit.git", .upToNextMajor(from: "1.4.1"))
+        .package(
+            url: "https://github.com/LicenseKit/LicenseKit.git",
+                .upToNextMajor(from: "1.4.1")
+        )
     ],
     targets: [
         .binaryTarget(
