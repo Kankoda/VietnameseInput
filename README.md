@@ -18,14 +18,6 @@ VietnameseInput lets you type in TELEX, VNI, and VIQR, without having to switch 
 
 
 
-## Pricing
-
-This package requires a commercial license to be used. You can sign up for a license from the [product website][Website] or the [online license store][LicenseStore].
-
-You can also use the "FREE" license key, as described in [getting-started guide][Getting-Started]. This gives you access to a capped version of the library, that can make at most 50 requests before it stops working.
-
-
-
 ## Installation
 
 VietnameseInput can be installed with the Swift Package Manager:
@@ -34,23 +26,33 @@ VietnameseInput can be installed with the Swift Package Manager:
 https://github.com/Kankoda/VietnameseInput.git
 ```
 
-This is a binary package, and must therefore only be linked to the main app target. All oher targets can still import and use it. A closed-source package can depend on this package as described [in this post](https://danielsaidi.com/blog/2025/05/02/adding-dependencies-to-binary-swift-packages). 
+This package requires a license to be used. You can sign up for a free or paid license from the [website][Website], then register it as described in the [getting-started guide][Getting-Started].
 
 
 
 ## Getting Started
 
-After [signing up for a VietnameseInput license](#pricing), you must use your license to unlock the SDK:
+You must first use your license to unlock the SDK:
 
 ```swift
-// If you have a license key
-let license = try await VietnameseInputLicense.register(withLicenseKey: "your-license-key")
-
-// If you have a license file
-let license = try await VietnameseInputLicense.register(withLicenseFileIn: .module)
+try await VietnameseInputLicense.register(.gumroad(licenseKey: "your-license-key"))
 ```
 
-To register a license in a SwiftUI app, the ``VietnameseInputLicenseView`` can be used to register a license before rendering a custom content view. This is more convenient and handles the try await for you.
+You can also use a `VietnameseInputApp` view to automatically register your license, by placing it in your app root:
+
+```swift
+@main
+struct MyApp: App {
+
+    var body: some Scene {
+        WindowGroup {
+            VietnameseInputApp(.gumroad(licenseKey: "...")) {
+                ContentView()   // <- You app's main content view
+            }
+        }
+    }
+}
+```
 
 Once you have a license, you can create a ``VietnameseInputEngine``, which can be used for Vietnamese input:
 
@@ -98,12 +100,7 @@ The demo app uses the "FREE", limited license key, which can perform a few opera
 
 VietnameseInput is developed by [Kankoda][Website] in Stockholm, Sweden.
 
-* Website: [kankoda.com][Website]
-* E-mail: [info@kankoda.com][Email]
-* Bluesky: [@kankoda.bsky.social][Bluesky]
-* Mastodon: [@kankoda@techhub.social][Mastodon]
-
-Feel free to reach out if you have any questions or feedback, or if you need support.
+Feel free to [reach out][email] if you have any questions or feedback, or if you need support.
 
 
 
@@ -115,9 +112,7 @@ This package requires a license to be used. You can sign up on the [product webs
 
 [Email]: mailto:info@kankoda.com
 [Website]: https://kankoda.com
-[Bluesky]: https://bsky.app/profile/kankoda.bsky.social
-[Mastodon]: https://techhub.social/@kankoda
-[Sponsors]: https://github.com/sponsors/danielsaidi
+[Product]: https://kankoda.com/vietnameseinput
 
 [Documentation]: https://kankoda.github.io/VietnameseInput/
 [License]: https://github.com/Kankoda/VietnameseInput/blob/master/LICENSE
