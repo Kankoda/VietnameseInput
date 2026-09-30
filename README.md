@@ -17,15 +17,6 @@ VietnameseInput is a Swift SDK that can be used to add Vietnamese TELEX, VNI, an
 VietnameseInput lets you type in TELEX, VNI, and VIQR, without having to switch to a Vietnamese keyboard. This can be useful in many different kind of applications, like games, educational apps, keyboard extensions, etc.
 
 
-
-## Pricing
-
-This package requires a commercial license to be used. You can sign up for a license from the [product website][Website] or the [online license store][LicenseStore].
-
-You can also use the "FREE" license key, as described in [getting-started guide][Getting-Started]. This gives you access to a capped version of the library, that can make at most 50 requests before it stops working.
-
-
-
 ## Installation
 
 VietnameseInput can be installed with the Swift Package Manager:
@@ -34,7 +25,7 @@ VietnameseInput can be installed with the Swift Package Manager:
 https://github.com/Kankoda/VietnameseInput.git
 ```
 
-This is a binary package, and must therefore only be linked to the main app target. All oher targets can still import and use it. A closed-source package can depend on this package as described [in this post](https://danielsaidi.com/blog/2025/05/02/adding-dependencies-to-binary-swift-packages). 
+This package requires a commercial license to be used. You can sign up for a license from the [product website][Website] or the [online license store][LicenseStore]. You can also use the "FREE" license key, as described in [getting-started guide][Getting-Started].
 
 
 
