@@ -1,3 +1,6 @@
+# This workflow bumps the repository version.
+# You can bump it a  major, minor, or patch step, or use a custom version number.
+
 name: Bump Version
 
 on:
