@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.2
 
 import PackageDescription
 
@@ -20,14 +20,14 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/LicenseKit/LicenseKit.git",
-                .upToNextMajor(from: "2.2.6")
+                .upToNextMajor(from: "2.4.1")
         )
     ],
     targets: [
         .binaryTarget(
             name: "VietnameseInput",
-            url: "https://github.com/Kankoda/VietnameseInput-Binaries/releases/download/0.3.0/VietnameseInput.zip",
-            checksum: "d45324b2f1b4d751c35c44ad67b1b37a77cc8ffa68fb00638372175f94224318"
+            url: "https://github.com/Kankoda/VietnameseInput-Binaries/releases/download/0.3.1/VietnameseInput.zip",
+            checksum: "f59d9342f534ef068e8f36aaa408babdcae01ba277006eb4af6cc4dfd9ddc9da"
         ),
         .target(
             name: "VietnameseInputDependencies",

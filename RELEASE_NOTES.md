@@ -1,8 +1,16 @@
 # Release notes
 
-VietnameseInput will honor semantic versioning after 1.0.
+[VietnameseInput](https://github.com/Kankoda/VietnameseInput) honors semantic versioning, with the following strategy:
 
-Before 1.0, breaking changes can occur in minor versions.
+* Deprecations can happen at any time.
+* Deprecations are removed in `major` updates.
+* Breaking changes should only occur in `major` updates.
+* Breaking changes *can* occur in `minor` and `patch` updates, if the alternative is worse.
+
+Beta version tags are removed after the next minor or major version. 
+
+These release notes only cover the current major version.
+
 
 
 ## 0.3
