@@ -88,14 +88,6 @@ The [online documentation][Documentation] has a thorough getting-started guide, 
 
 
 
-## Demo App
-
-The `Demo` folder has a demo app that shows you how to use the library.
-
-The demo app uses the "FREE", limited license key, which can perform a few operations before it stops working.
-
-
-
 ## Contact
 
 VietnameseInput is developed by [Kankoda][Website] in Stockholm, Sweden.
