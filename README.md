@@ -90,7 +90,7 @@ The [online documentation][Documentation] has a thorough getting-started guide, 
 
 ## Contact
 
-VietnameseInput is developed by [Kankoda][Website] in Stockholm, Sweden.
+This package is developed by [Kankoda][Website] in Stockholm, Sweden.
 
 Feel free to [reach out][email] if you have any questions or feedback, or if you need support.
 
