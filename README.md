@@ -5,7 +5,7 @@
 <p align="center">
     <img src="https://img.shields.io/github/v/release/Kankoda/VietnameseInput?color=forestgreen&sort=semver" alt="Version" />
     <img src="https://img.shields.io/badge/swift-6.0-orange.svg" alt="Swift 6.0" />
-    <a href="https://keyboardkit.github.io/VietnameseInput"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
+    <a href="https://kankoda.github.io/VietnameseInput"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
     <img src="https://img.shields.io/badge/license-commercial-yellow.svg" alt="Commercially Licensed" />
 </p>
 
@@ -38,7 +38,7 @@ You must first use your license to unlock the SDK:
 try await VietnameseInputLicense.register(.gumroad(licenseKey: "your-license-key"))
 ```
 
-You can also use a `VietnameseInputApp` view to automatically register your license, by placing it in your app root:
+You can also use the `.vietnameseInputLicense(...)` modifier on your app's root view, to automatically register your license on app launch:
 
 ```swift
 @main
@@ -46,13 +46,19 @@ struct MyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            VietnameseInputApp(.gumroad(licenseKey: "...")) {
-                ContentView()   // <- You app's main content view
-            }
+            ContentView()
+                .vietnameseInputLicense(.gumroad(licenseKey: "...")) { result in
+                    // Optional result handler
+                }
         }
     }
 }
 ```
+
+You can now start creating and presenting onboarding experiences in your app. See the [getting-started guide][Getting-Started] for more information.
+
+
+### Vietnamese Input
 
 Once you have a license, you can create a ``VietnameseInputEngine``, which can be used for Vietnamese input:
 
@@ -90,9 +96,7 @@ The [online documentation][Documentation] has a thorough getting-started guide, 
 
 ## Contact
 
-This package is developed by [Kankoda][Website] in Stockholm, Sweden.
-
-Feel free to [reach out][email] if you have any questions or feedback, or if you need support.
+This package is developed by [Kankoda][Website] in Stockholm, Sweden. Feel free to [reach out][email] if you have any questions or feedback, or if you need support integrating this package into your app.
 
 
 

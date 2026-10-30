@@ -1,15 +1,19 @@
 # Release notes
 
-[VietnameseInput](https://github.com/Kankoda/VietnameseInput) honors semantic versioning, with the following strategy:
+VietnameseInput will honor semantic versioning after 1.0.
 
-* Deprecations can happen at any time.
-* Deprecations are removed in `major` updates.
-* Breaking changes should only occur in `major` updates.
-* Breaking changes *can* occur in `minor` and `patch` updates, if the alternative is worse.
+Before 1.0, breaking changes can occur in minor versions.
 
-Beta version tags are removed after the next minor or major version. 
 
-These release notes only cover the current major version.
+
+## 0.4
+
+This version makes it easier to register a license.
+
+### 🎟️ License
+
+* `VietnameseInputLicenseModifier` is a new view modifier that can be used to register a license.
+* `View` has a new `.vietnameseInputLicense(...)` extension that calls this modifier in a clean way.
 
 
 
@@ -19,7 +23,6 @@ This version replaces most explicit diacritic replacements with combining mark l
 
 ### 📦 Package
 
-* `VietnameseInput` now ships as a multi-platform package.
 * `VietnameseInput` now targets iOS 16, .macOS 14, .tvOS 16, and .watchOS 10.
 
 ### ✨ Features
