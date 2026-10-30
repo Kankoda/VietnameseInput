@@ -4,9 +4,9 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/v/release/Kankoda/VietnameseInput?color=forestgreen&sort=semver" alt="Version" />
-    <img src="https://img.shields.io/badge/swift-6.0-orange.svg" alt="Swift 6.0" />
+    <img src="https://img.shields.io/badge/swift-6.2-orange.svg" alt="Swift 6.2" />
     <a href="https://kankoda.github.io/VietnameseInput"><img src="https://img.shields.io/badge/documentation-read-blue.svg" alt="Documentation" /></a>
-    <img src="https://img.shields.io/badge/license-commercial-yellow.svg" alt="Commercially Licensed" />
+    <a href="https://kankoda.com/vietnameseinput"><img src="https://img.shields.io/badge/license-commercial-red.svg" alt="Commercially Licensed" /></a>
 </p>
 
 
