@@ -96,7 +96,7 @@ The [online documentation][Documentation] has a thorough getting-started guide, 
 
 ## Contact
 
-This package is developed by [Kankoda][Website] in Stockholm, Sweden. Feel free to [reach out][email] if you have any questions or feedback, or if you need support integrating this package into your app.
+This package is developed by [Kankoda][Kankoda] in Stockholm, Sweden. Feel free to [reach out][email] if you have any questions or feedback, or if you need support integrating this package into your app.
 
 
 
@@ -107,11 +107,10 @@ This package requires a license to be used. You can sign up on the [product webs
 
 
 [Email]: mailto:info@kankoda.com
-[Website]: https://kankoda.com
-[Product]: https://kankoda.com/vietnameseinput
+[Kankoda]: https://kankoda.com
+[Website]: https://kankoda.com/vietnameseinput
 
 [Documentation]: https://kankoda.github.io/VietnameseInput/
+[Getting-Started]: https://kankoda.github.io/VietnameseInput/documentation/vietnameseinput/getting-started-article
 [License]: https://github.com/Kankoda/VietnameseInput/blob/master/LICENSE
 [LicenseStore]: https://kankoda.gumroad.com
-
-[Getting-Started]: https://kankoda.github.io/VietnameseInput/documentation/vietnameseinput/getting-started-article
